@@ -1,4 +1,8 @@
-!pip install streamlit openai python-dotenv pyngrok
+pip install -r requirements.txt
+
+import streamlit as st
+from llm_utils import generate_requirements
+
 import os
 os.environ["OPENAI_API_KEY"] = "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"
 %%writefile app.py
